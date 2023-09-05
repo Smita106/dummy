@@ -51,9 +51,9 @@ const StoreFrontSteps = () => {
   const cards = document.querySelectorAll(`.${styles.stepDesc}`);
   const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: `.${styles.cardContainer}`,
-      start: "40% 40%",
-      end: "bottom bottom",
+      trigger: `.${styles.heroImage}`,
+      start: "top center",
+      end: "bottom center",
       scrub: true,
       markers:true,
     },
@@ -76,8 +76,7 @@ const StoreFrontSteps = () => {
            <div className={styles.steps}>
               <ProgressSteps />
            </div>
-         </div>
-         <div className={styles.cardContainer}>
+           <div className={styles.cardContainer}>
             {desc.map((item,index) => {
                return <div key={index} className={styles.stepDesc}>
                   <h3>{item.heading}</h3>
@@ -94,6 +93,8 @@ const StoreFrontSteps = () => {
             }
             )}
            </div>
+         </div>
+        
         </div>
 }
 
