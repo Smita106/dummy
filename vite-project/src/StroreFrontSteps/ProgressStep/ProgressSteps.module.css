@@ -1,0 +1,72 @@
+.MainContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.StepContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+}
+.StepContainer:before {
+    content: '';
+    position: absolute;
+    background: #f3e7f3;
+    width: 4px; 
+    height: 100%; 
+    top: 0;
+    left: 9%; 
+    transform: translateX(-50%); 
+  }
+  .StepContainer:after{
+    content: '';
+    position: absolute;
+    background: #4a154b;
+    height: 25%;
+    width: 4px;
+    top: 0;
+    transition: 0.4s ease;
+    transform: translateX(-50%);
+    left: 9%;
+  }
+
+
+.StepWrapper {
+  position: relative;
+  z-index: 1;
+}
+.StepStyle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid #f3e7f3;
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.StepCount {
+  font-size: 19px;
+  color: #f3e7f3;
+}
+
+.StepsLabelContainer{
+  position: absolute;
+  top: 20px;
+  left: 45%;
+  padding: 5px;
+  transform: translate(-50%, -50%);
+}
+
+ .StepLabel {
+  font-size: 14px;
+  color: #4a154b;
+ }
