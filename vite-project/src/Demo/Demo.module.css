@@ -1,0 +1,51 @@
+/* App.css */
+.scrollableContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 20px;
+  height: 1000px; /* Adjust the height based on your content */
+}
+
+.scrollableLeft {
+  width: 20%;
+  position: sticky;
+  top: 0;
+}
+
+.scrollableLeft p {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.scrollableRight {
+  width: 75%;
+}
+
+.contentDiv {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: transform 0.3s, opacity 0.3s;
+  margin-right: 300px; /* Add this line for the gap */
+}
+
+.contentDiv.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ... (other CSS rules) */
+
+
+
+
+
+
